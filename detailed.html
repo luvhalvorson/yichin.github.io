@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lee Yi Chin– Detailed CV</title>
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="detailed.css">
+</head>
+<body>
+  <header class="hero">
+    <!-- <h1>Lee Yi Chin</h1>
+    <p>Phone +6490000000 | anasnaud@gmail.com</p>
+    <p>Work Visa: NZ Working Holiday Visa March 2027 | Get a car soon</p> -->
+
+    <div id="contact-placeholder" ></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        fetch('contact.html')
+          .then(response => response.text())
+          .then(htmlText => {
+            // 把 HTML 字串轉成 DOM
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(htmlText, 'text/html');
+  
+            // 選擇要的 section，例如 #contact-info
+            const section = doc.querySelector('#contact-short');
+  
+            // 插入到當前頁面
+            if(section) {
+              document.getElementById('contact-placeholder').appendChild(section);
+            }
+          })
+          .catch(err => console.error(err));
+      });
+    </script>
+
+</section>
+    <div class="hashtags">
+      <span>#Perception</span>
+      <span>#CriticalThinking</span>
+      <span>#AnomalyDetection</span>
+      <span>#PhysicallyFit</span>
+      <span>#ProblemSolver</span>
+      <span>#AnticipatoryService</span>
+      <span>#CanDoAttitude</span>
+      <span>#FarmReady</span>
+      <span>#RenovationGirl</span>
+    </div>
+  </header>
+
+  <section class="profile">
+    <h2>Profile</h2>
+    <p>
+      Reliable and hands-on individual with experience in home renovation and independent travel.
+      Fast learner as a pre big tech software engineer, physically capable, and comfortable working both independently and in small teams.
+      Currently based in Auckland and available immediately.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Practical Skills</h2>
+    <ul>
+      <li>Wall renovation (self-managed home project)
+        <ul>
+          <li>Power tool operation</li>
+          <li>Painting & patching</li>
+        </ul>
+      </li>
+      <li>Basic woodworking (can make basic furniture such as chair)</li>
+      <li>Heavy lifting / physically fit</li>
+      <li>Driving (if applicable)</li>
+      <li>Familiar with animals and their body languages, and more</li>
+    </ul>
+
+    <h3>Work Skills</h3>
+    <ul>
+      <li>Customer communication</li>
+      <li>Basic cash handling</li>
+      <li>Organised & checklist-driven</li>
+    </ul>
+
+    <h3>Tech</h3>
+    <ul>
+      <li>Website setup (GitHub Pages)</li>
+      <li>MacOS / productivity tools</li>
+      <li>Canva / basic editing</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+
+    <details open>
+      <summary>Malware Analyst Intern - Team T5 - Taiwan - 2018-2020</summary>
+      <ul>
+        <li>Acute Pattern Recognition & Insight
+          <ul>
+            <li>Analyzed vast amounts of seemingly insignificant data to identify hidden cyber-attack patterns. This high-level perception allows me to anticipate guest needs and spot operational risks before they escalate.</li>
+          </ul>
+        </li>
+        <li>Detail-Oriented Anomaly Detection
+          <ul>
+            <li>Possess a "detective’s mindset" for detail, ensuring total accuracy in manual cash handling and identifying subtle discrepancies that others might overlook.</li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details open>
+      <summary>Backend Engineer – TikTok Singapore (Bytedance) – Singapore – 2022-2024</summary>
+      <ul>
+        <li>Intercultural Communication & Inclusion
+          <ul>
+            <li>Served as a key bridge across diverse cultural backgrounds, leveraging strong interpersonal skills to foster an inclusive and welcoming environment for international clientele.</li>
+          </ul>
+        </li>
+        <li>Adaptive Decision-Making & Resilience
+          <ul>
+            <li>Demonstrated the ability to learn rapidly and make sound decisions in high-pressure, fast-changing environments, maintaining a high standard of performance and composure.</li>
+          </ul>
+        </li>
+      </ul>
+    </details>
+
+    <details open>
+      <summary>Cafe waitress - Angle Cafe - Taiwan - 2025.4 - 2025.10</summary>
+      <ul>
+        <li>Comfortable engaging with customers from different cultural backgrounds</li>
+        <li>Managed all manual cash transactions with a focus on mathematical precision and speed.</li>
+      </ul>
+    </details>
+
+    <details open>
+      <summary>Independent Home Renovation Project – Taiwan – 2025</summary>
+      <ul>
+        <li>Completed renovation project independently from planning to final execution.</li>
+        <li>Planned placement of hooks and wall fixtures to maximise functionality and space efficiency</li>
+        <li>Removed loose and damaged wall surfaces and prepared walls for repainting</li>
+        <li>Operated power tools for sanding and surface leveling (coarse to fine finish)</li>
+        <li>Applied 1 base coat and 2 top coats with clean, even results</li>
+        <li>Identified and resolved skirting board gap issues before painting</li>
+        <li>Installed wall hooks and fixtures independently</li>
+        <li>Maintained clean and safe work environment throughout the project</li>
+        <li>Planned and executed the entire project independently</li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="more">
+    <h2>More About Yichin - my hobbies and addtional skills</h2>
+    <details> 
+        <summary> Yoga teacher? Always a practitioner! </summary>
+        <ul>
+            <li>I started doing yoga since 2019 till now. I believe it's a body, mind, soul practice not only about the physical exercise
+                . I Completed yoga teacher training 200 hr in Bali, Indonesia</li>
+        </ul>
+    </details>
+
+    <details> 
+        <summary> Make my own wood furnitures! </summary>
+        <ul>
+            <li>woodworking made some furnitures for familyMa</li>
+        </ul>
+    </details>
+
+    <details> 
+        <summary> pour over coffee - 7days course in SCA certified nepal coffee shop <summary> 
+    </details>
+
+    <details> 
+        <summary> scuba diving - Advanced licese <summary> 
+    </details>
+
+    </section>
+    Hiking
+    <!-- 1. Home renovation before/after 照片 -->
+    <!-- 2. 旅遊或戶外活動照片 (show physically fit / adventurous) -->
+    <!-- 3. 與寵物互動的照片 (show caring side) -->
+    <!-- 4. 社群管理或小作品截圖 (show creative/tech side) -->
+    <!-- 5. 簡單生活/個人風格照片 (讓人感覺親和力) -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

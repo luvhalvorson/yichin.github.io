@@ -4,34 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yichin Lee | NZ Working Holiday</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
 
   <section class="hero">
-    <h1>Yichin Lee</h1>
-    <p class="tagline">Reliable. Hands-on. Fast learner.</p>
+    <h1>Lee, Yi Chin</h1>
+    <p class="tagline">can-do attitude.😃 Hands-on. 🤲 Fast learner. 🗒️</p>
     <p>NZ Working Holiday | Based in Auckland | Available Immediately</p>
     <div class="buttons">
-      <a href="#experience" class="btn">View Experience</a>
-      <a href="cv.pdf" class="btn outline">Download CV</a>
+      <a href="#experience" class="btn">View Work Experience</a>
+      <a href="printed.html" class="btn outline">Printed Version</a>
+      <a href="detailed.html" class="btn outline">View Detailed Version</a>
     </div>
   </section>
 
   <section class="intro">
     <p>
-      I appreciate you taking the time to scan and view this website —
-      we save a tree together.  
+      Greetings! I appreciate you taking the time to scan and view this website —
+      we save a tree together. 🌲 <br>
       At the same time, this page shows you much more about me.
     </p>
-  </section>
-
-  <section class="contact">
-    <h2>Contact</h2>
-    <p>Phone: NZ Number</p>
-    <p>Email: your@email.com</p>
-    <p>Work Visa: NZ Working Holiday Visa (valid until XXXX)</p>
-    <p>Driver’s License: International / Planning to buy a car</p>
   </section>
 
   <section class="hashtags">
@@ -40,16 +34,47 @@
     <span>#AnomalyDetection</span>
     <span>#PhysicallyFit</span>
     <span>#ProblemSolver</span>
-    <span>#CanDoAttitude</span>
+    <span>#Reliable</span>
     <span>#FarmReady</span>
     <span>#RenovationGirl</span>
   </section>
 
+
+  <div class='contact-long' id="contact-placeholder"></div>
+  <div id="contact-placeholder" ></div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      fetch('contact.html')
+        .then(response => response.text())
+        .then(htmlText => {
+          // 把 HTML 字串轉成 DOM
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(htmlText, 'text/html');
+
+          // 選擇要的 section，例如 #contact-info
+          const section = doc.querySelector('#contact-long');
+
+          // 插入到當前頁面
+          if(section) {
+            document.getElementById('contact-placeholder').appendChild(section);
+          }
+        })
+        .catch(err => console.error(err));
+    });
+  </script>
+  <!-- <section class="contact">
+    <h2>Contact</h2>
+    <li>Phone: +6490000000</li>
+    <li>Email: anasnaud@gmail.com</li>
+    <li>Work Visa: NZ Working Holiday Visa (valid until March 2027)</li>
+    <li>Driver’s License: International / Planning to buy a car</li>
+  </section> -->
+
   <section>
     <h2>Profile</h2>
     <p>
-      Reliable and hands-on individual with experience in home renovation,
-      social media management, and independent travel.
+      Reliable and hands-on individual with experience in all alone home renovation,
+      many practical hobbies, and independent travel.
       Fast learner with a background in tech, physically capable,
       and comfortable working independently or in small teams.
     </p>
@@ -58,7 +83,7 @@
   <section>
     <h2>Skills</h2>
 
-    <details>
+    <details open>
       <summary>Practical Skills</summary>
       <ul>
         <li>Wall renovation (self-managed home project)</li>
@@ -71,7 +96,7 @@
       </ul>
     </details>
 
-    <details>
+    <details open>
       <summary>Work Skills</summary>
       <ul>
         <li>Customer communication</li>
@@ -80,7 +105,7 @@
       </ul>
     </details>
 
-    <details>
+    <details open>
       <summary>Tech</summary>
       <ul>
         <li>Website setup (GitHub Pages)</li>
@@ -93,8 +118,25 @@
 
   <section id="experience">
     <h2>Work Experience</h2>
+    <details open>
+      <summary>Independent Home Renovation Project – Taiwan (2025)</summary>
+      <ul>
+        <li>Completed project independently from desigining, planning to execution</li>
+        <li>Surface preparation, sanding, and multi-stage painting</li>
+        <li>Installed fixtures and resolved skirting board gaps</li>
+        <li>Maintained clean and safe working environment</li>
+      </ul>
+    </details>
 
-    <details>
+    <details open>
+      <summary>Cafe Role – Taiwan (2025)</summary>
+      <ul>
+        <li>Customer interaction with international guests</li>
+        <li>Manual cash handling with speed and accuracy</li>
+      </ul>
+    </details>
+    
+    <details open>
       <summary>Backend Engineer – TikTok Singapore (2022–2024)</summary>
       <ul>
         <li>Intercultural communication across diverse teams</li>
@@ -102,7 +144,7 @@
       </ul>
     </details>
 
-    <details>
+    <details open>
       <summary>Malware Analyst Intern – Team T5 (2018–2020)</summary>
       <ul>
         <li>Pattern recognition and anomaly detection</li>
@@ -110,37 +152,21 @@
       </ul>
     </details>
 
-    <details>
-      <summary>Cafe Role – Taiwan (2025)</summary>
-      <ul>
-        <li>Customer interaction with international guests</li>
-        <li>Manual cash handling with speed and accuracy</li>
-      </ul>
-    </details>
+    
 
-    <details>
-      <summary>Independent Home Renovation Project – Taiwan (2025)</summary>
-      <ul>
-        <li>Completed project independently from planning to execution</li>
-        <li>Surface preparation, sanding, and multi-stage painting</li>
-        <li>Installed fixtures and resolved skirting board gaps</li>
-        <li>Maintained clean and safe working environment</li>
-      </ul>
-    </details>
+
 
   </section>
 
-  <section class="photos">
-    <h2>More About Me</h2>
-    <div class="gallery">
-      <img src="photo1.jpg" alt="Yichin photo">
-      <img src="photo2.jpg" alt="Yichin photo">
-      <img src="photo3.jpg" alt="Yichin photo">
-    </div>
-  </section>
+  <section class="more">
+    <h2>Extra Info</h2>
+    <p>not enough? I have a more detailed version for you..</p>
+    <a href="details.html" class="btn outline">Click to check out!</a>
 
-  <footer>
-    <p>© 2026 Yichin Lee</p>
+  </section>
+  
+    <footer>
+    <p>© 2026 Lee, Yi Chin</p>
   </footer>
 
   <script src="script.js"></script>

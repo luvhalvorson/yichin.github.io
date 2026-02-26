@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yichin Lee | NZ Working Holiday</title>
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="printed.css" />
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Lee, Yi Chin</h1>
+    <p class="tagline">can-do attitude.😃 Hands-on. 🤲 Fast learner. 🗒️</p>
+    <p>NZ Working Holiday | Based in Auckland | Available Immediately</p>
+  </section>
+
+  <section class="contact-long">
+    <div id="contact-placeholder"></di>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          fetch('contact.html')
+            .then(response => response.text())
+            .then(htmlText => {
+              // 把 HTML 字串轉成 DOM
+              const parser = new DOMParser();
+              const doc = parser.parseFromString(htmlText, 'text/html');
+    
+              // 選擇要的 section，例如 #contact-info
+              const section = doc.querySelector('#contact-long');
+    
+              // 插入到當前頁面
+              if(section) {
+                document.getElementById('contact-placeholder').appendChild(section);
+              }
+            })
+            .catch(err => console.error(err));
+        });
+      </script>
+  </section>
+
+
+  <section class="intro">
+    <p>
+      Reliable and hands-on individual with experience in all alone home renovation,
+      many practical hobbies, and independent travel.
+      Fast learner with a background in tech, physically capable,
+      and comfortable working independently or in small teams.
+    </p>
+  </section>
+
+  <section class="hashtags">
+    <span>#CriticalThinking</span>
+    <span>#AnomalyDetection</span>
+    <span>#PhysicallyFit</span>
+    <span>#ProblemSolver</span>
+    <span>#Reliable</span>
+    <span>#RenovationGirl</span>
+  </section>
+
+
+
+
+  <section class="cv-main">
+    <table class="cv-table">
+      <tr>
+        <!-- Skills 左側欄 -->
+        <td class="skills-column">
+          <h3>Practical Skills</h3>
+          <ul>
+            <li>Wall renovation (power tool, painting & patching)</li>
+            <li>Basic woodworking (chair, small furniture)</li>
+            <li>Heavy lifting / physically fit</li>
+            <li>Driving (if applicable)</li>
+            <li>Familiar with animals and body language</li>
+          </ul>
+  
+          <h4>Work Skills</h4>
+          <ul>
+            <li>Customer communication</li>
+            <li>Basic cash handling</li>
+            <li>Organised & checklist-driven</li>
+          </ul>
+  
+          <h4>Tech</h4>
+          <ul>
+            <li>Website setup (GitHub Pages)</li>
+            <li>MacOS / productivity tools</li>
+            <li>Canva / basic editing</li>
+          </ul>
+        </td>
+  
+        <!-- Work Experience 右側欄 -->
+        <td class="experience-column">
+          <h3>Work Experience</h3>
+  
+          <div class="job">
+            <span class="marker">▶</span>
+            <strong>Malware Analyst Intern – Team T5 (2018–2020)</strong>
+            <ul>
+              <li>Acute Pattern Recognition & Insight: anticipate guest needs, detect risks</li>
+              <li>Detail-Oriented Anomaly Detection: cash handling accuracy, spotting discrepancies</li>
+            </ul>
+          </div>
+  
+          <div class="job">
+            <span class="marker">▶</span>
+            <strong>Backend Engineer – TikTok Singapore (2022–2024)</strong>
+            <ul>
+              <li>Intercultural Communication & Inclusion: foster inclusive environment</li>
+              <li>Adaptive Decision-Making & Resilience: learn fast, perform under pressure</li>
+            </ul>
+          </div>
+  
+          <div class="job">
+            <span class="marker">▶</span>
+            <strong>Cafe waitress – Angle Cafe (2025)</strong>
+            <ul>
+              <li>Customer interaction with international guests</li>
+              <li>Manual cash handling with precision</li>
+            </ul>
+          </div>
+  
+          <div class="job">
+            <span class="marker">▶</span>
+            <strong>Independent Home Renovation – Taiwan (2025)</strong>
+            <ul>
+              <li>Full project planning and execution</li>
+              <li>Wall prep, sanding, painting, skirting board fixes</li>
+              <li>Installed hooks and fixtures, maintained safe environment</li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </section>
+
+    <footer>
+    <p>© 2026 Lee, Yi Chin</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
